@@ -18,7 +18,7 @@
 
     <div id='container'> </div> <!-- this container is for making space for the users to click off the menu -->
     <div id='hamburgermenu'>
-      <img id='menuimg'src="img/Hamburger.png">
+      <img id='menuimg'src="img/Hamburger.png" alt="white hamburger menu icon">
     </div>
 
 
@@ -33,45 +33,45 @@
 
     <div id='followdiv'>
       <button id='follow'> Let's keep in contact! </button>
-      <a href="https://www.instagram.com/_glo.photography/"> <img id='instaicon'src='img/insta.png'></a>
+      <a href="https://www.instagram.com/_glo.photography/"> <img id='instaicon'src='img/insta.png' alt"an image of the instagram logo"></a>
     </div> <!-- originally, the users would only be able to hover over the button to know to interact with it as it would reduced the opacity. As there is no hover on mobile, a media query was used to make the div flash in opacity to encourage interaction with it.-->
 
 
    <div id='arrow' style="display:block; text-align: center">
-    <img  src="img/arrow.png">
+    <img  src="img/arrow.png" alt="an arrow pointing down.">
    </div>
 
 </section>
 
 <section id="flowers" style="background-color: #f9e872"> <!-- the inline css stops the background from the bio carrying over to the flowers section as the gradient animation uses the same yellow shade -->
 <h1 id=flowerh1 onclick="BackToTop()">Flowers</h1>
-<img id="flowerbackarrow" src="img/backarrow.png">
+<img id="flowerbackarrow" src="img/backarrow.png" alt="an arrow pointing left">
 <div class="grid"> <!-- This div was made so that the images could be styled in css to create a grid.-->
-<img id="flowerimg1" src="img/flowers/1.jpg">
+<img id="flowerimg1" src="img/flowers/1.jpg" alt="image of horse mint plant">
 <div id='flowerimg1div'> <p id='zoominfo1'>This is a Horse Mint plant. It origins from Africa, Europe and Asia and is part of the mint species. The plant is also used within cooking and teas. </p></div> <!--Each image has an accompanying div for text. -->
 
-<img id="flowerimg2" src="img/flowers/2.jpg">
+<img id="flowerimg2" src="img/flowers/2.jpg" alt="image of a Chinese Astilbe">
  <div id='flowerimg2div'> <p id='zoominfo2'>This is a Chinese Astilbe. Originally from China and Japan, it was introduced to western countries in the 20th century. The plant thrives in the shade and comes in a variety of bright colours. </p\></div>
 
-<img id="flowerimg3"src="img/flowers/3.jpg">
+<img id="flowerimg3"src="img/flowers/3.jpg" alt="image of an Agapanthus Preacox ">
  <div id='flowerimg3div'> <p id='zoominfo3'>The Agapanthus Preacox only bloom in the summer. Although they are sometimes called 'African Lily', they aren't actaully lilies. They are from the Amaryllis family.  </p\></div>
 
-<img id="flowerimg4"src="img/flowers/4.jpg">
+<img id="flowerimg4"src="img/flowers/4.jpg" alt="image of an elder shrub">
  <div id='flowerimg4div'> <p id='zoominfo4'> This is an Elder Shrub. As part of the elderberries species, the berries grown are eaten by birds. Elder is toxic to humans except from the flowers and ripend berries.</p\></div>
 
-<img id="flowerimg5"src="img/flowers/5.jpg">
+<img id="flowerimg5"src="img/flowers/5.jpg" alt="image of a Rodgersia herb">
   <div id='flowerimg5div'> <p id='zoominfo5'> The Rodgersia herb is native to northen China. It is part of the Saxifragaceae family and blooms in the summer. It is also typically used in ponds. </p\></div>
 
-<img id="flowerimg6"src="img/flowers/6.jpg">
+<img id="flowerimg6"src="img/flowers/6.jpg" alt="image of a oxeye daisy">
  <div id='flowerimg6div'> <p id='zoominfo6'> The Oxeye daisy has many names such as 'Dog daisy' and 'Moon daisy'. It is considered as a common weed with low toxicity levels. It can also reproduce asexually. </p\></div>
 
-<img id="flowerimg7"src="img/flowers/7.jpg">
+<img id="flowerimg7"src="img/flowers/7.jpg" alt="image of a Great globe-thistle">
 <div id='flowerimg7div'> <p id='zoominfo7'> This is a Great globe-thistle that has become naturalized in North America. Its scientific name is Echinops Sphaerocephalus and it belongs to the Asteraceae family. </p\></div>
 
-<img id="flowerimg8"src="img/flowers/8.jpg">
+<img id="flowerimg8"src="img/flowers/8.jpg" alt="image of a chain fern">
 <div id='flowerimg8div'> <p id='zoominfo8'>  This speicies of Chain fern is called the Rooting chainfern. The average height of this plant is 1.8 meters and is also evergreen. It is most notable for its intresting shape.</p\></div>
 
-<img id="flowerimg9"src="img/flowers/9.jpg">
+<img id="flowerimg9"src="img/flowers/9.jpg" alt="image of a Anise hyssops">
 <div id='flowerimg9div'> <p id='zoominfo9'> As part of the Giant hyssops species, the Anise hyssops has a mint fragrance which attracts bees and birds. It can tolerate drought and can pollinate itself. </p></div>
 
 </div>
@@ -81,48 +81,65 @@
 
 <section id='photoshopedits'>
   <h1 id='PSh1'onclick="BackToTop()">Photoshop Edits</h1>
-    <img id="PSbackarrow" src="img/backarrow.png">
+    <img id="PSbackarrow" src="img/backarrow.png" alt="an image of an arrow pointing left">
 
 <div class='PSgrid'>
-<div class="photoshoprow1">
-  <img id='street'src="img/photoshop/street.jpg">
+<div class="photoshoprow1"> <!-- the photoshop grid is seperated into divs that will act as rows. This is so the gap between the rows can be easily altered in css to spave them out.-->
+  <img id='street'src="img/photoshop/street.jpg" alt="an image of a street before the photoshop edit">
   <video id="streetvid" width="100%" height="400" controls poster="img/photoshop/streetfinished.jpg">
+    <source src="videos/photoshop/street.webm" type="video/webm"> <!-- a webm version of the video is added to every video tag incase users devices/browsers don't support the mp4 format.-->
 <source src="videos/photoshop/street.mp4" type="video/mp4">
+
 Your browser does not support the video.
 </video>
 
-  <img id='woman'src="img/photoshop/womanoriginal.jpg">
+  <img id='woman'src="img/photoshop/womanoriginal.jpg" alt="image of a woman before the photoshop edit">
   <video id="womanvid" width="100%" height="400" controls poster="img/photoshop/womanafter.jpg">
-<source src="videos/photoshop/cartoonwoman.mp4" type="video/mp4"> </video>
+    <source src="videos/photoshop/cartoonwoman.webm" type="video/webm">
+<source src="videos/photoshop/cartoonwoman.mp4" type="video/mp4">
+  Your browser does not support the video.
+ </video>
   </div>
 
   <div class='photoshoprow2'>
-  <img id='car'src="img/photoshop/car.jpg">
+  <img id='car'src="img/photoshop/car.jpg" alt="an image of a car before the photoshop edit">
   <video id="carvid" width="100%" height="400" controls poster="img/photoshop/carafter.jpg">
-<source src="videos/photoshop/car.mp4" type="video/mp4"> </video>
+    <source src="videos/photoshop/car.webm" type="video/webm">
+<source src="videos/photoshop/car.mp4" type="video/mp4">
+  Your browser does not support the video.
+ </video>
 
-  <img id='vampire'src="img/photoshop/vampirebefore.jpg">
+  <img id='vampire'src="img/photoshop/vampirebefore.jpg" alt="an image of a man before the photoshop edit">
   <video id="vampirevid" width="100%" height="400" controls poster="img/photoshop/vampireafter.jpg">
-<source src="videos/photoshop/vampire.mp4" type="video/mp4"></video>
+    <source src="videos/photoshop/vampire.webm" type="video/webm">
+<source src="videos/photoshop/vampire.mp4" type="video/mp4">
+  Your browser does not support the video.
+
+</video>
 
 </div>
 
   <div class='photoshoprow3'>
-  <img id='eye'src="img/photoshop/eyebefore.jpg">
+  <img id='eye'src="img/photoshop/eyebefore.jpg" alt="an up close image of an eye before the photoshop edit">
   <video id="eyevid" width="100%" height="400" controls poster="img/photoshop/eyeafter.jpg">
-<source src="videos/photoshop/eye.mp4" type="video/mp4"> </video>
+<source src="videos/photoshop/eye.webm" type="video/webm">
+<source src="videos/photoshop/eye.mp4" type="video/mp4">
+  Your browser does not support the video.
+  </video>
 
-  <img id='lightpaint'src="img/photoshop/lightpaintbefore.jpg">
+  <img id='lightpaint'src="img/photoshop/lightpaintbefore.jpg" alt="an inage of a girl before the photoshop edit">
   <video id="lightpaintvid" width="100%" height="400" controls poster="img/photoshop/lightpaintafter.jpg">
-<source src="videos/photoshop/lightpaint.mp4" type="video/mp4"> </video>
+<source src="videos/photoshop/lightpaint.webm" type="video/webm">
+<source src="videos/photoshop/lightpaint.mp4" type="video/mp4">
+  Your browser does not support the video.
+ </video>
 
 
 </div>
 <div id= clickvid>
-  <p> Watch as this image tranforms through editing!<p>
+  <p> Watch as this image tranforms through editing!<p> <!--This text will be postioned underneath every zoomed video. it is placed in the last row div so that it won't postion itself inbetween the other rows. -->
   </div>
 </div>
-
 
 
 
@@ -131,29 +148,30 @@ Your browser does not support the video.
 
 <section id='wildlife'>
   <h1 id='Wildlifeh1'onclick="BackToTop()">Wildlife</h1>
-  <img id="wildlifebackarrow" src="img/backarrow.png">
+  <img id="wildlifebackarrow" src="img/backarrow.png" alt="an image of a arrow pointing left">
 
 <div class='wildlifegrid'>
-<img id="Wlimg1" src="img/wildlife/1.jpg">
+<img id="Wlimg1" src="img/wildlife/1.jpg" alt="an image of a Aberdeen Angus cow">
 <div id="wlimg1div"> <p id="wl1info">This breed of cow is called the Aberdeen Angus. It is one of the most common breeds of cow in the UK. An average female weighs 550kg and males usually weigh a whopping 850kg!</p></div>
 
-<img id="Wlimg2" src="img/wildlife/2.png">
+<img id="Wlimg2" src="img/wildlife/2.png" alt="an image of a Rosemary beetle">
 <div id="wlimg2div"><p id="wl2info">This is a Rosemary beetle (Chrysolina americana). It was first spotted in London in 1994 and can be found betweeb May and October</p></div>
 
-<img id="Wlimg3" src="img/wildlife/3.jpg">
+<img id="Wlimg3" src="img/wildlife/3.jpg" alt="an image of a mute swan">
 <div id="wlimg3div"> <p id="wl3info">This breed of swan is called a mute swan (Cygnus olor). It is commonly found in Leicester which is where this photo was taken. They have an average life span of 10 years!</p></div>
 
-<img id="Wlimg4" src="img/wildlife/4.jpg">
+<img id="Wlimg4" src="img/wildlife/4.jpg" alt="an image of a common laybird">
 <div id="wlimg4div"><p id="wl4info">This photo is of a common laybird that was resting on a blue pole. This image was my first time ever using a macro lens!</p></div>
 
-<img id="Wlimg5" src="img/wildlife/5.jpg">
+<img id="Wlimg5" src="img/wildlife/5.jpg" alt="an image of a Greylag goose">
 <div id="wlimg5div"><p id="wl5info">This is a Greylag goose (Anser anser). It is a common breed in the UK and the rest of Europe.</p></div>
 
-<img id="Wlimg6" src="img/wildlife/6.png">
+<img id="Wlimg6" src="img/wildlife/6.png" alt="an image of a Ploughshare Tortoise">
 <div id="wlimg6div"><p id="wl6info"> This is a Ploughshare Tortoise. Sadly, this breed is endangered due to poaching. It is easily identified by its tall shell. </p></div>
 
 
 <video id='sloth'width="100" height="500" controls poster="img/wildlife/slothposterimg.jpg">
+  <source src="videos/sloth.webm" type="video/webm">
 <source src="videos/sloth.mp4" type="video/mp4">
 Your browser does not support the video.
 </video>
@@ -166,12 +184,12 @@ Your browser does not support the video.
     openMenu = () => {
       document.getElementById('menu').style.left = '0';
       document.getElementById('container').style.left = '0';
-    } /* this function will be used to display the menu. 0 means displaying on the page.*/
+    } /* this function will be used to display the menu. 0 means displaying on the page. */
 
     closeMenu = () => {
       document.getElementById('menu').style.left = '-100%';
       document.getElementById('container').style.left = '-100%';
-    } /* this function will be used to put the menu back in its off screen postion that it is set to when the site first loads.*/
+    } /* this function will be used to put the menu back in its off screen postion that it is set to when the site first loads. the left -100% value allows the menu to be off the page*/
 
 
     document.getElementById('menuimg').addEventListener('click', openMenu); /* this allows the menu opening to be triggered when clicking on the hamburger meu icon. */
@@ -220,7 +238,7 @@ Your browser does not support the video.
 
   /*bio script end*/
 desktop = () => {
-  if(window.innerWidth < 800) { /*this if statement acts similar to a media query as it will only carry out the zoom functions if the screen is less than 1000px wide. The 'window.innerWidth' identifies the how wide the screen is. the zoom functions wont take place on larger screens as the images will already be displayed in a large size.*/
+  if(window.innerWidth < 800) { /*this if statement acts similar to a media query as it will only carry out the zoom functions if the screen is less than 800px wide. The 'window.innerWidth' identifies the how wide the screen is. the zoom functions wont take place on larger screens as the images will already be displayed in a large size and to prevent the grid from being distorted*/
 
 
 
