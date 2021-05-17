@@ -1,0 +1,907 @@
+html{
+  scroll-behavior:smooth; /* this allowed the site to have a smooth transition effect when the scrollIntoView function carries out.*/
+  width:100%;
+  margin: 0;
+}
+
+body{
+margin: 0;
+background-color: #cccccc;
+width: 100%;
+height: auto;
+
+
+}
+section{
+  width: 100%;
+}
+
+
+#container{
+  height:100%; /* this gives the users the full page height to click off the menu. this means that no other elements can be interacted with when the menu is open*/
+  width: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  left:-100%;
+  transition: left 0.4s;
+
+
+}
+
+button{
+  background: none;
+  font-size: 22px;
+  border: none;
+  border-right:inset ;
+
+  font-family: avenir;
+  text-align: center;
+  padding: 3%;
+
+}
+ button:active{
+   background-color: grey;
+   color: white;
+ } /* as the user clicks the button, the option they chose will change colour so they will be able to identify what they chose as the animation to the page is happening/the menu slides off screen*/
+
+/* Homepage css start*/
+#bio{
+  background-color: #faea69;
+  animation: backgroundcolourchange 20s infinite;
+padding-bottom: 5%;
+
+}
+
+@keyframes backgroundcolourchange {
+  0% {background-color: #faea69;}
+  25% {background-color: #92F08D;}
+  50% {background-color: #A1E2EB;}
+  75% {background-color: #F3A69F;}
+  100% {background-color: #faea69;}
+}
+/* these keyframes depict at what point in the animations loop that the colours need to change. This gives the slow gradient effect on the homepage background. */
+
+}
+
+#pagetitle h1{
+  margin:0;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'courier new',monospace;
+display: block;
+  color: #4f6066;
+background-color: #cccccc;
+  padding: 2%;
+
+
+}
+
+.biopic{
+  display: block;
+  margin-left:auto; /* allows the image to be centred in the middle of the page*/
+  margin-right: auto;
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+
+
+#biotext{
+padding: 3%;
+font-size: 20px;
+font-family: avenir;
+text-align: center;
+}
+
+#menu{
+background-color: #cccccc;
+position: fixed;
+top: 0;
+width:100%;
+z-index: 10;
+left:-100%; /*sets the menu off of screen*/
+transition: left 0.4s; /*creates the slide out effect*/
+
+}
+#container{
+  position:fixed;
+  top: 0;
+}
+
+
+#grey{
+  display: block;
+  height:10%;
+  width: 100%;
+  background-color: #cccccc;
+}
+#wildlifemenuoption{
+  border:none;
+}
+
+
+#hamburgermenu{
+  position: sticky;
+  top: 0;
+  padding: 4%;
+  height: 5%;
+  width: auto;
+  height: 20%;
+}
+#menuimg{
+  height: 30px;
+
+}
+
+#followdiv{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+
+}
+
+
+#follow{
+  animation: pulse 3s infinite;
+  font-size: 26px;
+  border-width: thick;
+  border-style: dotted;
+  border-color: white;
+  text-align: center;
+  font-family: Courier New;
+  margin: 0;
+
+}
+#follow:hover{
+  opacity: 0.5;
+  transition: 1 ease;
+}
+@media screen and (hover:none){
+
+#follow {animation: pulse 3s infinite;}
+ @keyframes pulse {
+  0% {opacity: 1;}
+  50% {opacity: 0.3;}
+  100% {opacity: 1;}
+ }
+} /* if users are on a moblie, the hover effect will not work. Therefore, the above media query will recognise when the users is on a moblie and will flash the 'follow' div to show that they can interact with it */
+
+
+
+ #instaicon{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  opacity: 0;
+   height:70px;
+   width: 70px;
+   transition: 1s ease;
+   padding-top: 4%;
+
+ }
+
+ #arrow{
+   margin: 2%;
+padding-top: 10%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 25%;
+   animation: arrow 1s infinite;
+ }
+
+@keyframes arrow {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(10px);}
+  100%{transform: translateY(0px);}
+} /*these keyframes let the arrow have a bouncing efect by moving the y axis position*/
+ #yellowandpinkblend{
+   display: block;
+   height:20vh;
+   width: 100%;
+   background-image: linear-gradient(#faea69,#F3A69F);
+ }/*these will blend the sections together to make the appearance of a page gradient whilst still being able to use sections*/
+
+ @media screen and (min-width: 600px){
+   .biopic{
+     width: 50%;
+     float:left;
+     padding-left: 2%;
+
+   }
+#biotext{
+  padding-left: 54%;
+  text-align: left;
+  padding-bottom: 10%;
+
+}
+
+#arrow{
+  width:13%;
+}
+button{
+  font-size: 32px;
+  padding-right: 5%;
+}
+#pagetitle{
+  font-size: 60px;
+}
+#container{
+  height: 50%;
+}
+#followdiv{
+  width: 30%;
+  padding-bottom: 3%;
+
+}
+#follow{
+  padding: 5%;
+}
+
+ } /* above shows the following css that will be applied through a media query when the page width is a minium of 600px wide. This is to utilise the wider space given. for example, the bio picture and bio text will be displayed side by side.*/
+@media screen and (min-width: 1000px){
+  #menu{
+    width:15%;
+    height:100%;
+  }
+  #menu button{
+    font-size: 28px;
+    padding-bottom: 60%;
+    padding-top: 55%;
+    border:none;
+    width:100%;
+  }
+  body{
+    background-color: #faea68;
+    animation: backgroundcolourchange 20s infinite;
+    }
+
+    @keyframes backgroundcolourchange {
+      0% {background-color: #faea69;}
+      25% {background-color: #92F08D;}
+      50% {background-color: #A1E2EB;}
+      75% {background-color: #F3A69F;}
+      100% {background-color: #faea69;}
+    }
+
+  }
+  #bio{
+    background: none;
+
+  }
+  #pagetitle{
+    padding-top: 0;
+  }
+  #biotext{
+    font-size: 30px;
+    padding-bottom: 15%;
+  }
+}
+ /*Flower css start*/
+
+
+ #flowers{
+ background-color: #faea69;
+ padding-bottom: 20%;
+ }
+
+ h1{
+   display: block;
+   width:100%;
+   font-size: 40px;
+   text-align: center;
+   font-family: avenir;
+   font-weight: lighter;
+   margin: 0;
+   padding-top: 5%;
+   padding-bottom: 1%;
+
+ }
+
+
+ .grid img{
+   height: 197px;
+   width:auto;
+   padding: 1%;
+   opacity: 1;
+   transition: opacity 0.15s; /* allows the images to fade away whilst the zoom functions are triggered.*/
+   transition: 1s ease; /*this lets the chosen image expand smoothly out of the grid format*/
+
+ }
+
+
+
+ .grid{
+   text-align: center;
+   display: block;
+   padding: 1.5%;
+   width: 95%;
+   margin:auto;
+
+ }
+ #flowerbackarrow{
+   display: none;
+   animation: backarrow 1s infinite;
+ }
+ @keyframes backarrow {
+   0%{transform: translateX(0px);}
+   50%{transform: translateX(10px);}
+   100%{transform: translateX(0px);}
+ }
+
+
+ #flowerimg1div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo1{
+
+   padding-left: 4%;
+       padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+
+
+ }
+
+ #flowerimg2div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo2{
+
+   padding-left: 4%;
+      padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+
+
+ }
+
+ #flowerimg3div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo3{
+
+   padding-left: 4%;
+      padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg4div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo4{
+
+   padding-left: 4%;
+      padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg5div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo5{
+
+   padding-left: 4%;
+      padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg6div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo6{
+
+   padding-left: 4%;
+       padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg7div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo7{
+
+   padding-left: 4%;
+       padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg8div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+ }
+ #zoominfo8{
+
+   padding-left: 4%;
+      padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+ }
+
+ #flowerimg9div{
+   display: none;
+
+   height: 90%;
+   width: 100%;
+
+   transition: 1s ease-out;
+
+ }
+ #zoominfo9{
+
+   padding-left: 4%;
+       padding-top: 40%;
+   padding-bottom: 10%;
+   text-align: center;
+   width: 89%;
+   margin:0;
+   padding-right: 1%;
+
+ }
+#empty{
+  opacity: 0;
+}
+ @media screen and (min-width: 520px){
+   .grid img{
+     height:250px;
+     padding: 4.5%;
+   }
+   .grid{
+     width:99%;
+     margin: ;
+   }
+   #zoominfo1{
+     font-size: 30px;
+   }
+   #zoominfo2{
+     font-size: 30px;
+   }
+   #zoominfo3{
+     font-size: 30px;
+   }
+   #zoominfo4{
+     font-size: 30px;
+   }
+   #zoominfo5{
+     font-size: 30px;
+   }
+   #zoominfo6{
+     font-size: 30px;
+   }
+   #zoominfo7{
+     font-size: 30px;
+   }
+   #zoominfo8{
+     font-size: 30px;
+   }
+   #zoominfo9{
+     font-size: 30px;
+   }
+
+
+ }
+ @media screen and (min-width:800px){
+
+.grid {
+margin: auto 0;
+  width: 99%;
+}
+.grid img{
+  width: 250px;
+  height: auto;
+ padding: 3%;
+}
+
+#flowerimg1:hover{
+  content: url('img/flowers/1dt.jpg');
+}
+#flowerimg2:hover{
+  content: url('img/flowers/2dt.jpg');
+}
+#flowerimg3:hover{
+  content: url('img/flowers/3dt.jpg');
+}
+#flowerimg4:hover{
+  content: url('img/flowers/4dt.jpg');
+}
+#flowerimg5:hover{
+  content: url('img/flowers/5dt.jpg');
+}
+#flowerimg6:hover{
+  content: url('img/flowers/6dt.jpg');
+}
+#flowerimg7:hover{
+  content: url('img/flowers/7dt.jpg');
+}
+#flowerimg8:hover{
+  content: url('img/flowers/8dt.jpg');
+}
+#flowerimg9:hover{
+  content: url('img/flowers/9dt.jpg');
+} /* as the zoom in funciton is turned off after 800px wide screens, the information that would be in the <p> element that would be displayed not longer can. To still get the information across to desktop users, the image will change on hover to a version of the image that has the same information the <p> element has.*/
+}
+}
+ /* Flowers css end*/
+
+/*photoshop edits css start*/
+#PSh1{
+  display: block;
+  width:100%;
+  font-size: 40px;
+  text-align: center;
+  font-family: avenir;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+#PSbackarrow{
+  display: none;
+  animation: backarrow 1s infinite;
+}
+@keyframes backarrow {
+  0%{transform: translateX(0px);}
+  50%{transform: translateX(10px);}
+  100%{transform: translateX(0px);}
+}
+#photoshopedits{
+  background-color: #F3A69F;
+  padding-bottom: 25%;
+  height:100%;
+
+}
+
+.PSgrid{
+  margin: 2%;
+  padding-top: 10%;
+  background-color: #d9948e;
+animation: PSgrid 5s infinite;
+
+}
+
+
+@keyframes PSgrid {
+0% {background-color: #d9948e;}
+50% {background-color: #dc8781;}
+100% {background-color: #d9948e;}
+
+
+}
+.photoshoprow1{
+  display: flex;
+ justify-content:space-between;
+  padding-bottom: 10%;
+  margin: 1%;
+
+}
+.photoshoprow1 img{
+
+  width: 49%;
+  height:auto;
+
+
+}
+
+.photoshoprow2{
+  display: flex;
+ justify-content:space-between;
+  padding-bottom: 10%;
+    margin: 1%;
+
+}
+.photoshoprow2 img{
+
+  width: 49%;
+  height:auto;
+
+}
+
+.photoshoprow3{
+  display: flex;
+ justify-content:space-between;
+  padding-bottom: 10%;
+    margin: 1%;
+
+}
+.photoshoprow3 img{
+
+  width: 49%;
+  height:auto;
+
+}
+
+
+#street:hover{
+  content: url('img/photoshop/streetfinished.jpg');
+
+} /* as a little extra perk for desktop viewers, when the images are hovered over, the finshed edit will be shown.by replacing the content.*/
+
+#woman:hover{
+  content: url('img/photoshop/womanafter.jpg');
+
+}
+
+#car:hover{
+  content: url('img/photoshop/carafter.jpg');
+
+}
+
+#vampire:hover{
+  content: url('img/photoshop/vampireafter.jpg')
+}
+
+#eye:hover{
+  content: url('img/photoshop/eyeafter.jpg')
+}
+
+#lightpaint:hover{
+  content: url('img/photoshop/lightpaintafter.jpg')
+}
+
+#street{
+  transition: 1s ease-in;
+}
+
+#streetvid{
+  display:none;
+}
+
+#womanvid{
+  display: none;
+}
+
+#carvid{
+  display: none;
+}
+
+#vampirevid{
+  display: none;
+}
+
+#eyevid{
+  display: none;
+}
+
+#lightpaintvid{
+  display: none;
+
+}
+#clickvid{
+  font-size: 30px;
+  display: none;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@media screen and (min-width:1000px){
+  .PSgrid {
+
+    padding-top: 5%;
+  }
+#clickvid{
+  font-size: 50px;
+  padding-bottom: 10%;
+}
+}
+
+/*photoshop edit css end*/
+#pinkandgreenblend{
+  display: block;
+  height:20vh;
+  width: 100%;
+  background-image: linear-gradient(#F3A69F,#92F08D);}
+
+  /*wildife css start*/
+  #Wildlifeh1{
+    display: block;
+
+    width:100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: avenir;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #wildlife{
+    background-color: #92F08D;
+    padding-bottom: 60%;
+    display: block;
+
+  }
+
+  #wildlifebackarrow{
+    display: none;
+    animation: backarrow 1s infinite;
+  }
+  @keyframes backarrow {
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(0px);}
+  }
+
+  .wildlifegrid img{
+    width: 32.5%;
+    height: auto;
+    transition: opacity 0.15s;
+    transition: 1s ease;
+
+  }
+
+  .wildlifegrid{
+    margin:2%;
+    display: block;
+    height: 550px;
+    padding: 5%;
+      background-color: #75bc72;
+   animation: wildgrid 5s infinite;
+  }
+
+  @keyframes wildgrid {
+    0% {background-color: #75bc72;}
+    50% {background-color: #76d572;}
+    100% {background-color: #75bc72;}
+
+  }
+  #sloth{
+    height: 35%;
+    width: 100%;
+  }
+
+  #wlimg1div{
+    display:none;
+  }
+  #wlimg2div{
+    display:none;
+  }
+  #wlimg3div{
+    display:none;
+  }
+  #wlimg4div{
+    display:none;
+  }
+  #wlimg5div{
+    display:none;
+  }
+  #wlimg6div{
+    display:none;
+  }
+  #wl1info{
+    padding-top: 50%;
+    text-align: center;
+  }
+  #wl2info{
+    padding-top: 50%;
+    text-align: center;
+  }
+  #wl3info{
+    padding-top: 50%;
+    text-align: center;
+  }
+  #wl4info{
+    padding-top: 50%;
+    text-align: center;
+  }
+  #wl5info{
+    padding-top: 50%;
+    text-align: center;
+  }
+  #wl6info{
+    padding-top: 50%;
+    text-align: center;
+}
+@media screen and (min-width: 800px){
+
+  #wildlife{
+    height:auto;
+  }
+  .wildlifegrid img{
+    width:auto;
+    height: 400px;
+
+  }
+  .wildlifegrid{
+    width: 82%;
+    text-align: center;
+    height:auto;
+  }
+  #Wlimg1:hover{
+    content: url('img/wildlife/1dt.jpg');
+  }
+  #Wlimg2:hover{
+    content: url('img/wildlife/2dt.jpg');
+  }
+  #Wlimg3:hover{
+    content: url('img/wildlife/3dt.jpg');
+  }
+  #Wlimg4:hover{
+    content: url('img/wildlife/4dt.jpg');
+  }
+  #Wlimg5:hover{
+    content: url('img/wildlife/5dt.jpg');
+  }
+  #Wlimg6:hover{
+    content: url('img/wildlife/6dt.png');
+  }
+
+}
+  /*wildlife css end*/

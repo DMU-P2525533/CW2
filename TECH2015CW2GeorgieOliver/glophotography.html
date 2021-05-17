@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="glophotography.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id='menu'>
+      <button id='flowermenuoption' onclick="flowerbutton()">Flowers</button>
+      <button id='photoshopmenuoption' onclick="photoshopbutton()">Photoshop Edits</button>
+      <button id='wildlifemenuoption' onclick="wildlifebutton()">Wildlife</button>
+    </div>
+
+    <!-- As the website is a single file, buttons were used instead of <a>. This is becuase there is no need to link to other pages. The onclick function for each button use the 'scrollIntoView' method. It will scroll to the <h1> of the relevant page when clicked. Id's were used as each function had to direct to a different <h1>.  -->
+
+    <div id='container'> </div> <!-- this container is for making space for the users to click off the menu -->
+    <div id='hamburgermenu'>
+      <img id='menuimg'src="img/Hamburger.png">
+    </div>
+
+
+
+    <section id="bio"> <!-- each of the 'pages' are seperated into sections. This is becuase all of the content inside is related to a single theme (what page it is).and needs to be clearly outlined as opposed to using another div.-->
+
+
+      <h1 id="pagetitle">_g.l.o. Media</h1>
+      <img src="img/biopic.jpg" class="biopic" alt="a self portrait image of Georgie holding a camera up to a mirror">
+      <p id='biotext'> Hello! Welcome to my portfolio website! My name is Georgie and I currently study media production at DeMontfort University. Scroll down or use the menu in the top left to see my work. </p>
+
+
+    <div id='followdiv'>
+      <button id='follow'> Let's keep in contact! </button>
+      <a href="https://www.instagram.com/_glo.photography/"> <img id='instaicon'src='img/insta.png'></a>
+    </div> <!-- originally, the users would only be able to hover over the button to know to interact with it as it would reduced the opacity. As there is no hover on mobile, a media query was used to make the div flash in opacity to encourage interaction with it.-->
+
+
+   <div id='arrow' style="display:block; text-align: center">
+    <img  src="img/arrow.png">
+   </div>
+
+</section>
+
+<section id="flowers" style="background-color: #f9e872"> <!-- the inline css stops the background from the bio carrying over to the flowers section as the gradient animation uses the same yellow shade -->
+<h1 id=flowerh1 onclick="BackToTop()">Flowers</h1>
+<img id="flowerbackarrow" src="img/backarrow.png">
+<div class="grid"> <!-- This div was made so that the images could be styled in css to create a grid.-->
+<img id="flowerimg1" src="img/flowers/1.jpg">
+<div id='flowerimg1div'> <p id='zoominfo1'>This is a Horse Mint plant. It origins from Africa, Europe and Asia and is part of the mint species. The plant is also used within cooking and teas. </p></div> <!--Each image has an accompanying div for text. -->
+
+<img id="flowerimg2" src="img/flowers/2.jpg">
+ <div id='flowerimg2div'> <p id='zoominfo2'>This is a Chinese Astilbe. Originally from China and Japan, it was introduced to western countries in the 20th century. The plant thrives in the shade and comes in a variety of bright colours. </p\></div>
+
+<img id="flowerimg3"src="img/flowers/3.jpg">
+ <div id='flowerimg3div'> <p id='zoominfo3'>The Agapanthus Preacox only bloom in the summer. Although they are sometimes called 'African Lily', they aren't actaully lilies. They are from the Amaryllis family.  </p\></div>
+
+<img id="flowerimg4"src="img/flowers/4.jpg">
+ <div id='flowerimg4div'> <p id='zoominfo4'> This is an Elder Shrub. As part of the elderberries species, the berries grown are eaten by birds. Elder is toxic to humans except from the flowers and ripend berries.</p\></div>
+
+<img id="flowerimg5"src="img/flowers/5.jpg">
+  <div id='flowerimg5div'> <p id='zoominfo5'> The Rodgersia herb is native to northen China. It is part of the Saxifragaceae family and blooms in the summer. It is also typically used in ponds. </p\></div>
+
+<img id="flowerimg6"src="img/flowers/6.jpg">
+ <div id='flowerimg6div'> <p id='zoominfo6'> The Oxeye daisy has many names such as 'Dog daisy' and 'Moon daisy'. It is considered as a common weed with low toxicity levels. It can also reproduce asexually. </p\></div>
+
+<img id="flowerimg7"src="img/flowers/7.jpg">
+<div id='flowerimg7div'> <p id='zoominfo7'> This is a Great globe-thistle that has become naturalized in North America. Its scientific name is Echinops Sphaerocephalus and it belongs to the Asteraceae family. </p\></div>
+
+<img id="flowerimg8"src="img/flowers/8.jpg">
+<div id='flowerimg8div'> <p id='zoominfo8'>  This speicies of Chain fern is called the Rooting chainfern. The average height of this plant is 1.8 meters and is also evergreen. It is most notable for its intresting shape.</p\></div>
+
+<img id="flowerimg9"src="img/flowers/9.jpg">
+<div id='flowerimg9div'> <p id='zoominfo9'> As part of the Giant hyssops species, the Anise hyssops has a mint fragrance which attracts bees and birds. It can tolerate drought and can pollinate itself. </p></div>
+
+</div>
+
+</section>
+<div id='yellowandpinkblend'></div> <!-- Although this div acts as seperator between sections, it is placed at the top of the next section to avoid there being a gap in the html which appears if it is put between sections.-->
+
+<section id='photoshopedits'>
+  <h1 id='PSh1'onclick="BackToTop()">Photoshop Edits</h1>
+    <img id="PSbackarrow" src="img/backarrow.png">
+
+<div class='PSgrid'>
+<div class="photoshoprow1">
+  <img id='street'src="img/photoshop/street.jpg">
+  <video id="streetvid" width="100%" height="400" controls poster="img/photoshop/streetfinished.jpg">
+<source src="videos/photoshop/street.mp4" type="video/mp4">
+Your browser does not support the video.
+</video>
+
+  <img id='woman'src="img/photoshop/womanoriginal.jpg">
+  <video id="womanvid" width="100%" height="400" controls poster="img/photoshop/womanafter.jpg">
+<source src="videos/photoshop/cartoonwoman.mp4" type="video/mp4"> </video>
+  </div>
+
+  <div class='photoshoprow2'>
+  <img id='car'src="img/photoshop/car.jpg">
+  <video id="carvid" width="100%" height="400" controls poster="img/photoshop/carafter.jpg">
+<source src="videos/photoshop/car.mp4" type="video/mp4"> </video>
+
+  <img id='vampire'src="img/photoshop/vampirebefore.jpg">
+  <video id="vampirevid" width="100%" height="400" controls poster="img/photoshop/vampireafter.jpg">
+<source src="videos/photoshop/vampire.mp4" type="video/mp4"></video>
+
+</div>
+
+  <div class='photoshoprow3'>
+  <img id='eye'src="img/photoshop/eyebefore.jpg">
+  <video id="eyevid" width="100%" height="400" controls poster="img/photoshop/eyeafter.jpg">
+<source src="videos/photoshop/eye.mp4" type="video/mp4"> </video>
+
+  <img id='lightpaint'src="img/photoshop/lightpaintbefore.jpg">
+  <video id="lightpaintvid" width="100%" height="400" controls poster="img/photoshop/lightpaintafter.jpg">
+<source src="videos/photoshop/lightpaint.mp4" type="video/mp4"> </video>
+
+
+</div>
+<div id= clickvid>
+  <p> Watch as this image tranforms through editing!<p>
+  </div>
+</div>
+
+
+
+
+</section>
+<div id='pinkandgreenblend'></div>
+
+<section id='wildlife'>
+  <h1 id='Wildlifeh1'onclick="BackToTop()">Wildlife</h1>
+  <img id="wildlifebackarrow" src="img/backarrow.png">
+
+<div class='wildlifegrid'>
+<img id="Wlimg1" src="img/wildlife/1.jpg">
+<div id="wlimg1div"> <p id="wl1info">This breed of cow is called the Aberdeen Angus. It is one of the most common breeds of cow in the UK. An average female weighs 550kg and males usually weigh a whopping 850kg!</p></div>
+
+<img id="Wlimg2" src="img/wildlife/2.png">
+<div id="wlimg2div"><p id="wl2info">This is a Rosemary beetle (Chrysolina americana). It was first spotted in London in 1994 and can be found betweeb May and October</p></div>
+
+<img id="Wlimg3" src="img/wildlife/3.jpg">
+<div id="wlimg3div"> <p id="wl3info">This breed of swan is called a mute swan (Cygnus olor). It is commonly found in Leicester which is where this photo was taken. They have an average life span of 10 years!</p></div>
+
+<img id="Wlimg4" src="img/wildlife/4.jpg">
+<div id="wlimg4div"><p id="wl4info">This photo is of a common laybird that was resting on a blue pole. This image was my first time ever using a macro lens!</p></div>
+
+<img id="Wlimg5" src="img/wildlife/5.jpg">
+<div id="wlimg5div"><p id="wl5info">This is a Greylag goose (Anser anser). It is a common breed in the UK and the rest of Europe.</p></div>
+
+<img id="Wlimg6" src="img/wildlife/6.png">
+<div id="wlimg6div"><p id="wl6info"> This is a Ploughshare Tortoise. Sadly, this breed is endangered due to poaching. It is easily identified by its tall shell. </p></div>
+
+
+<video id='sloth'width="100" height="500" controls poster="img/wildlife/slothposterimg.jpg">
+<source src="videos/sloth.mp4" type="video/mp4">
+Your browser does not support the video.
+</video>
+
+</div>
+</section>
+  <script>
+
+    /*Menu script start*/
+    openMenu = () => {
+      document.getElementById('menu').style.left = '0';
+      document.getElementById('container').style.left = '0';
+    } /* this function will be used to display the menu. 0 means displaying on the page.*/
+
+    closeMenu = () => {
+      document.getElementById('menu').style.left = '-100%';
+      document.getElementById('container').style.left = '-100%';
+    } /* this function will be used to put the menu back in its off screen postion that it is set to when the site first loads.*/
+
+
+    document.getElementById('menuimg').addEventListener('click', openMenu); /* this allows the menu opening to be triggered when clicking on the hamburger meu icon. */
+    document.getElementById('container').addEventListener('click', closeMenu);/* will do the opposite action and allow the menu to go back off screen when the users click the invisible container that sits below the menu.*/
+
+
+    flowerbutton = () => {
+      let flower = document.getElementById("flowers");
+      flower.scrollIntoView();
+    closeMenu()
+  } /* this function identifies the section (in this case flowers) and makes it scroll into view at the same time as closing the menu. This will be used as the navigation fucntion for the menu. (repeated below for each button) */
+
+
+    photoshopbutton = () => {
+      let photoshop = document.getElementById("photoshopedits");
+      photoshop.scrollIntoView();
+      closeMenu()
+
+    }
+
+    wildlifebutton = () => {
+      let wildlife = document.getElementById("wildlife");
+      wildlife.scrollIntoView();
+      closeMenu()
+
+    }
+
+    BackToTop = () => {
+      let bio = document.getElementById("hamburgermenu");
+      bio.scrollIntoView();
+    } /* this function does the opposite as those above as it scrolls back to the top when users click on the <h1> of the showing section (onclick added to <h1> html.)
+    /*menu script end*/
+
+    /*bio script start*/
+    InstagramPopUp = () => {
+      document.getElementById("instaicon").style.opacity = '1';
+      }
+    document.getElementById('follow').addEventListener('mouseover', InstagramPopUp);
+    /* this function allows the instagram icon to fade into visability through changing the opacity value when clicked on. by using getElementById, it allows the follow div to be identified. The addEventListener waits for  a trigger (click) to let the function to be carried out. This is opposed to using a onclick attribute in the html. */
+
+
+    Instagramclose = () => {
+      document.getElementById("instaicon").style.opacity = '0';
+      }
+    document.getElementById('follow').addEventListener('mouseout', Instagramclose); /* this is the inverse to the function above*/
+
+  /*bio script end*/
+desktop = () => {
+  if(window.innerWidth < 800) { /*this if statement acts similar to a media query as it will only carry out the zoom functions if the screen is less than 1000px wide. The 'window.innerWidth' identifies the how wide the screen is. the zoom functions wont take place on larger screens as the images will already be displayed in a large size.*/
+
+
+
+    /*flower script start*/
+    zoomimg1 = () => {
+     document.getElementById('flowerimg1').style.transform = "scale(2) translate(0%, 15%)";
+     document.getElementById('flowerimg1div').style.display = "block";
+     document.getElementById('flowerbackarrow').style.display = "block";
+     document.getElementById('flowerimg2').style.display = "none";
+     document.getElementById('flowerimg3').style.display = "none";
+     document.getElementById('flowerimg4').style.display = "none";
+     document.getElementById('flowerimg5').style.display = "none";
+     document.getElementById('flowerimg6').style.display = "none";
+     document.getElementById('flowerimg7').style.display = "none";
+     document.getElementById('flowerimg8').style.display = "none";
+     document.getElementById('flowerimg9').style.display = "none";
+   };
+/* To create the zoom in effect for the images, the image selected would be scaled up and translated to be central on the page. This was by manipulating the css of that image. The div for the <p> and back arrow would be set to display to become visable. the rest of the grid would be set to 0 opacity so that they would dissapear. Opacity was altered instead of display because setting the display to none warped the smooth transtion of the transform css. This was because the grid format was distrupted. each image had to be individually altered as setting a class wouldn't make the function work. This was due to it also hiding the image that was to be enlarged.*/
+
+   zoomoutimg1 = () => {
+    document.getElementById('flowerimg1').style.transform = "none";
+    document.getElementById('flowerimg1div').style.display = "none";
+    document.getElementById('flowerbackarrow').style.display = "none"
+    document.getElementById('flowerimg2').style.display = "";
+    document.getElementById('flowerimg3').style.display = "";
+    document.getElementById('flowerimg4').style.display = "";
+    document.getElementById('flowerimg5').style.display = "";
+    document.getElementById('flowerimg6').style.display = "";
+    document.getElementById('flowerimg7').style.display = "";
+    document.getElementById('flowerimg8').style.display = "";
+    document.getElementById('flowerimg9').style.display = "";
+  }; /* This is the inverse to the above fucntion to place the image back into the grid.*/
+
+   document.getElementById('flowerimg1').addEventListener('click', zoomimg1);
+   document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg1);
+   /* These two lines show the elements that will trigger the fucntions. This was all reapeated for all 9 images in the grid and the other sections content*/
+
+   zoomimg2 = () => {
+    document.getElementById('flowerimg2').style.transform = "scale(2) translate(0%, 15%)";
+    document.getElementById('flowerimg2div').style.display = "block";
+    document.getElementById('flowerbackarrow').style.display = "block"
+    document.getElementById('flowerimg1').style.display = "none";
+    document.getElementById('flowerimg3').style.display = "none";
+    document.getElementById('flowerimg4').style.display = "none";
+    document.getElementById('flowerimg5').style.display = "none";
+    document.getElementById('flowerimg6').style.display = "none";
+    document.getElementById('flowerimg7').style.display = "none";
+    document.getElementById('flowerimg8').style.display = "none";
+    document.getElementById('flowerimg9').style.display = "none";
+
+    };
+
+    zoomoutimg2 = () => {
+     document.getElementById('flowerimg2').style.transform = "none";
+     document.getElementById('flowerimg2div').style.display = "none";
+     document.getElementById('flowerbackarrow').style.display = "none"
+     document.getElementById('flowerimg1').style.display = "";
+     document.getElementById('flowerimg3').style.display = "";
+     document.getElementById('flowerimg4').style.display = "";
+     document.getElementById('flowerimg5').style.display = "";
+     document.getElementById('flowerimg6').style.display = "";
+     document.getElementById('flowerimg7').style.display = "";
+     document.getElementById('flowerimg8').style.display = "";
+     document.getElementById('flowerimg9').style.display = "";
+
+    };
+      document.getElementById('flowerimg2').addEventListener('click', zoomimg2);
+      document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg2);
+
+      zoomimg3 = () => {
+       document.getElementById('flowerimg3').style.transform = "scale(2) translate(0%, 15%)";
+       document.getElementById('flowerimg3div').style.display = "block";
+       document.getElementById('flowerbackarrow').style.display = "block"
+       document.getElementById('flowerimg1').style.display = "none";
+       document.getElementById('flowerimg2').style.display = "none";
+       document.getElementById('flowerimg4').style.display = "none";
+       document.getElementById('flowerimg5').style.display = "none";
+       document.getElementById('flowerimg6').style.display = "none";
+       document.getElementById('flowerimg7').style.display = "none";
+       document.getElementById('flowerimg8').style.display = "none";
+       document.getElementById('flowerimg9').style.display = "none";
+
+     };
+
+     zoomoutimg3 = () => {
+      document.getElementById('flowerimg3').style.transform = "none";
+      document.getElementById('flowerimg3div').style.display = "none";
+      document.getElementById('flowerbackarrow').style.display = "none"
+      document.getElementById('flowerimg1').style.display = "";
+      document.getElementById('flowerimg2').style.display = "";
+      document.getElementById('flowerimg4').style.display = "";
+      document.getElementById('flowerimg5').style.display = "";
+      document.getElementById('flowerimg6').style.display = "";
+      document.getElementById('flowerimg7').style.display = "";
+      document.getElementById('flowerimg8').style.display = "";
+      document.getElementById('flowerimg9').style.display = "";
+
+     };
+       document.getElementById('flowerimg3').addEventListener('click', zoomimg3);
+       document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg3);
+
+       zoomimg4 = () => {
+        document.getElementById('flowerimg4').style.transform = "scale(2) translate(0%, 15%)";
+        document.getElementById('flowerimg4div').style.display = "block";
+        document.getElementById('flowerbackarrow').style.display = "block"
+        document.getElementById('flowerimg2').style.display = "none";
+        document.getElementById('flowerimg3').style.display = "none";
+        document.getElementById('flowerimg1').style.display = "none";
+        document.getElementById('flowerimg5').style.display = "none";
+        document.getElementById('flowerimg6').style.display = "none";
+        document.getElementById('flowerimg7').style.display = "none";
+        document.getElementById('flowerimg8').style.display = "none";
+        document.getElementById('flowerimg9').style.display = "none";
+
+      };
+
+      zoomoutimg4 = () => {
+       document.getElementById('flowerimg4').style.transform = "none";
+       document.getElementById('flowerimg4div').style.display = "none";
+       document.getElementById('flowerbackarrow').style.display = "none"
+       document.getElementById('flowerimg2').style.display = "";
+       document.getElementById('flowerimg3').style.display = "";
+       document.getElementById('flowerimg1').style.display = "";
+       document.getElementById('flowerimg5').style.display = "";
+       document.getElementById('flowerimg6').style.display = "";
+       document.getElementById('flowerimg7').style.display = "";
+       document.getElementById('flowerimg8').style.display = "";
+       document.getElementById('flowerimg9').style.display = "";
+
+     };
+        document.getElementById('flowerimg4').addEventListener('click', zoomimg4);
+        document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg4);
+
+        zoomimg5 = () => {
+         document.getElementById('flowerimg5').style.transform = "scale(2) translate(0%, 15%)";
+         document.getElementById('flowerimg5div').style.display = "block";
+         document.getElementById('flowerbackarrow').style.display = "block"
+         document.getElementById('flowerimg2').style.display = "none";
+         document.getElementById('flowerimg3').style.display = "none";
+         document.getElementById('flowerimg1').style.display = "none";
+         document.getElementById('flowerimg4').style.display = "none";
+         document.getElementById('flowerimg6').style.display = "none";
+         document.getElementById('flowerimg7').style.display = "none";
+         document.getElementById('flowerimg8').style.display = "none";
+         document.getElementById('flowerimg9').style.display = "none";
+
+       };
+
+       zoomoutimg5 = () => {
+        document.getElementById('flowerimg5').style.transform = "none";
+        document.getElementById('flowerimg5div').style.display = "none";
+        document.getElementById('flowerbackarrow').style.display = "none"
+        document.getElementById('flowerimg2').style.display = "";
+        document.getElementById('flowerimg3').style.display = "";
+        document.getElementById('flowerimg1').style.display = "";
+        document.getElementById('flowerimg4').style.display = "";
+        document.getElementById('flowerimg6').style.display = "";
+        document.getElementById('flowerimg7').style.display = "";
+        document.getElementById('flowerimg8').style.display = "";
+        document.getElementById('flowerimg9').style.display = "";
+
+      };
+         document.getElementById('flowerimg5').addEventListener('click', zoomimg5);
+         document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg5);
+
+         zoomimg6 = () => {
+          document.getElementById('flowerimg6').style.transform = "scale(2) translate(0%, 15%)";
+          document.getElementById('flowerimg6div').style.display = "block";
+          document.getElementById('flowerbackarrow').style.display = "block"
+          document.getElementById('flowerimg2').style.display = "none";
+          document.getElementById('flowerimg3').style.display = "none";
+          document.getElementById('flowerimg1').style.display = "none";
+          document.getElementById('flowerimg4').style.display = "none";
+          document.getElementById('flowerimg5').style.display = "none";
+          document.getElementById('flowerimg7').style.display = "none";
+          document.getElementById('flowerimg8').style.display = "none";
+          document.getElementById('flowerimg9').style.display = "none";
+
+        };
+
+        zoomoutimg6 = () => {
+         document.getElementById('flowerimg6').style.transform = "none";
+         document.getElementById('flowerimg6div').style.display = "none";
+         document.getElementById('flowerbackarrow').style.display = "none"
+         document.getElementById('flowerimg2').style.display = "";
+         document.getElementById('flowerimg3').style.display = "";
+         document.getElementById('flowerimg1').style.display = "";
+         document.getElementById('flowerimg4').style.display = "";
+         document.getElementById('flowerimg5').style.display = "";
+         document.getElementById('flowerimg7').style.display = "";
+         document.getElementById('flowerimg8').style.display = "";
+         document.getElementById('flowerimg9').style.display = "";
+
+       };
+          document.getElementById('flowerimg6').addEventListener('click', zoomimg6);
+          document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg6);
+
+          zoomimg7 = () => {
+           document.getElementById('flowerimg7').style.transform = "scale(2) translate(0%, 15%)";
+           document.getElementById('flowerimg7div').style.display = "block";
+           document.getElementById('flowerbackarrow').style.display = "block"
+           document.getElementById('flowerimg2').style.display = "none";
+           document.getElementById('flowerimg3').style.display = "none";
+           document.getElementById('flowerimg1').style.display = "none";
+           document.getElementById('flowerimg4').style.display = "none";
+           document.getElementById('flowerimg5').style.display = "none";
+           document.getElementById('flowerimg6').style.display = "none";
+           document.getElementById('flowerimg8').style.display = "none";
+           document.getElementById('flowerimg9').style.display = "none";
+
+         };
+
+         zoomoutimg7 = () => {
+          document.getElementById('flowerimg7').style.transform = "none";
+          document.getElementById('flowerimg7div').style.display = "none";
+          document.getElementById('flowerbackarrow').style.display = "none"
+          document.getElementById('flowerimg2').style.display = "";
+          document.getElementById('flowerimg3').style.display = "";
+          document.getElementById('flowerimg1').style.display = "";
+          document.getElementById('flowerimg4').style.display = "";
+          document.getElementById('flowerimg5').style.display = "";
+          document.getElementById('flowerimg6').style.display = "";
+          document.getElementById('flowerimg8').style.display = "";
+          document.getElementById('flowerimg9').style.display = "";
+
+        };
+           document.getElementById('flowerimg7').addEventListener('click', zoomimg7);
+           document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg7);
+
+           zoomimg8 = () => {
+            document.getElementById('flowerimg8').style.transform = "scale(2) translate(0%, 15%)";
+            document.getElementById('flowerimg8div').style.display = "block";
+            document.getElementById('flowerbackarrow').style.display = "block"
+            document.getElementById('flowerimg2').style.display = "none";
+            document.getElementById('flowerimg3').style.display = "none";
+            document.getElementById('flowerimg1').style.display = "none";
+            document.getElementById('flowerimg4').style.display = "none";
+            document.getElementById('flowerimg5').style.display = "none";
+            document.getElementById('flowerimg6').style.display = "none";
+            document.getElementById('flowerimg7').style.display = "none";
+            document.getElementById('flowerimg9').style.display = "none";
+
+          };
+
+          zoomoutimg8 = () => {
+           document.getElementById('flowerimg8').style.transform = "none";
+           document.getElementById('flowerimg8div').style.display = "none";
+           document.getElementById('flowerbackarrow').style.display = "none"
+           document.getElementById('flowerimg2').style.display = "";
+           document.getElementById('flowerimg3').style.display = "";
+           document.getElementById('flowerimg1').style.display = "";
+           document.getElementById('flowerimg4').style.display = "";
+           document.getElementById('flowerimg5').style.display = "";
+           document.getElementById('flowerimg6').style.display = "";
+           document.getElementById('flowerimg7').style.display = "";
+           document.getElementById('flowerimg9').style.display = "";
+
+         };
+            document.getElementById('flowerimg8').addEventListener('click', zoomimg8);
+            document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg8);
+
+            zoomimg9 = () => {
+             document.getElementById('flowerimg9').style.transform = "scale(2) translate(0%, 15%)";
+             document.getElementById('flowerimg9div').style.display = "block";
+             document.getElementById('flowerbackarrow').style.display = "block"
+             document.getElementById('flowerimg2').style.display = "none";
+             document.getElementById('flowerimg3').style.display = "none";
+             document.getElementById('flowerimg1').style.display = "none";
+             document.getElementById('flowerimg4').style.display = "none";
+             document.getElementById('flowerimg5').style.display = "none";
+             document.getElementById('flowerimg6').style.display = "none";
+             document.getElementById('flowerimg7').style.display = "none";
+             document.getElementById('flowerimg8').style.display = "none";
+
+           };
+
+           zoomoutimg9 = () => {
+            document.getElementById('flowerimg9').style.transform = "none";
+            document.getElementById('flowerimg9div').style.display = "none";
+            document.getElementById('flowerbackarrow').style.display = "none"
+            document.getElementById('flowerimg2').style.display = "";
+            document.getElementById('flowerimg3').style.display = "";
+            document.getElementById('flowerimg1').style.display = "";
+            document.getElementById('flowerimg4').style.display = "";
+            document.getElementById('flowerimg5').style.display = "";
+            document.getElementById('flowerimg6').style.display = "";
+            document.getElementById('flowerimg7').style.display = "";
+            document.getElementById('flowerimg8').style.display = "";
+
+          };
+             document.getElementById('flowerimg9').addEventListener('click', zoomimg9);
+             document.getElementById('flowerbackarrow').addEventListener('click', zoomoutimg9);
+          }
+        }
+        window.addEventListener('load', desktop); /* This is the end of the if statement. A window event listener with the load attribute is added as it will identify the screens width as the page loads. This means that the correct functions will be ready to play once the page has loaded.*/
+    /*flower script end*/
+
+/*photoshop edit script start*/
+
+edit1zoom = () => {
+  document.getElementById('street').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('street').style.display = "none";
+  document.getElementById('streetvid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+  document.getElementById('clickvid').style.display = "block"
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('car').style.display = "none";
+  document.getElementById('vampire').style.display = "none";
+  document.getElementById('eye').style.display = "none";
+  document.getElementById('lightpaint').style.display = "none";
+};
+
+edit1zoomout = () => {
+  document.getElementById('street').style.transform = 'none';
+  document.getElementById('street').style.display = "";
+  document.getElementById('streetvid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+    document.getElementById('clickvid').style.display = "none"
+  document.getElementById('woman').style.display = "";
+  document.getElementById('car').style.display = "";
+  document.getElementById('vampire').style.display = "";
+  document.getElementById('eye').style.display = "";
+  document.getElementById('lightpaint').style.display = "";
+
+};
+
+document.getElementById('street').addEventListener('click', edit1zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit1zoomout);
+
+edit2zoom = () => {
+  document.getElementById('woman').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('womanvid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+    document.getElementById('clickvid').style.display = "block"
+  document.getElementById('street').style.display = 'none';
+  document.getElementById('car').style.display = "none";
+    document.getElementById('vampire').style.display = "none";
+    document.getElementById('eye').style.display = "none";
+    document.getElementById('lightpaint').style.display = "none";
+};
+
+edit2zoomout = () => {
+  document.getElementById('woman').style.transform = 'none';
+  document.getElementById('woman').style.display = "";
+  document.getElementById('womanvid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+  document.getElementById('clickvid').style.display = "none"
+  document.getElementById('street').style.display = "";
+  document.getElementById('car').style.display = "";
+  document.getElementById('vampire').style.display = "";
+  document.getElementById('eye').style.display = "";
+  document.getElementById('lightpaint').style.display = "";
+};
+
+document.getElementById('woman').addEventListener('click', edit2zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit2zoomout);
+
+edit3zoom = () => {
+  document.getElementById('car').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('car').style.display = "none";
+  document.getElementById('carvid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+    document.getElementById('clickvid').style.display = "block"
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('street').style.display = "none";
+    document.getElementById('vampire').style.display = "none";
+    document.getElementById('eye').style.display = "none";
+    document.getElementById('lightpaint').style.display = "none";
+};
+
+edit3zoomout = () => {
+  document.getElementById('car').style.transform = 'none';
+  document.getElementById('car').style.display = "";
+  document.getElementById('carvid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+  document.getElementById('clickvid').style.display = "none"
+  document.getElementById('woman').style.display = "";
+  document.getElementById('street').style.display = "";
+  document.getElementById('vampire').style.display = "";
+  document.getElementById('eye').style.display = "";
+  document.getElementById('lightpaint').style.display = "";
+};
+
+document.getElementById('car').addEventListener('click', edit3zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit3zoomout);
+
+edit4zoom = () => {
+  document.getElementById('vampire').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('vampire').style.display = "none";
+  document.getElementById('vampirevid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+    document.getElementById('clickvid').style.display = "block"
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('street').style.display = "none";
+    document.getElementById('car').style.display = "none";
+    document.getElementById('eye').style.display = "none";
+    document.getElementById('lightpaint').style.display = "none";
+};
+
+edit4zoomout = () => {
+  document.getElementById('vampire').style.transform = 'none';
+  document.getElementById('vampire').style.display = "";
+  document.getElementById('vampirevid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+  document.getElementById('clickvid').style.display = "none"
+  document.getElementById('woman').style.display = "";
+  document.getElementById('street').style.display = "";
+  document.getElementById('car').style.display = "";
+  document.getElementById('eye').style.display = "";
+  document.getElementById('lightpaint').style.display = "";
+};
+
+document.getElementById('vampire').addEventListener('click', edit4zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit4zoomout);
+
+edit5zoom = () => {
+  document.getElementById('eye').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('eye').style.display = "none";
+  document.getElementById('eyevid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+    document.getElementById('clickvid').style.display = "block"
+
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('street').style.display = "none";
+    document.getElementById('car').style.display = "none";
+    document.getElementById('vampire').style.display = "none";
+      document.getElementById('lightpaint').style.display = "none";
+};
+
+edit5zoomout = () => {
+  document.getElementById('eye').style.transform = 'none';
+  document.getElementById('eye').style.display = "";
+  document.getElementById('eyevid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+  document.getElementById('clickvid').style.display = "none"
+  document.getElementById('woman').style.display = "";
+  document.getElementById('street').style.display = "";
+  document.getElementById('car').style.display = "";
+  document.getElementById('vampire').style.display = "";
+    document.getElementById('lightpaint').style.display = "";
+};
+
+document.getElementById('eye').addEventListener('click', edit5zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit5zoomout);
+
+edit6zoom = () => {
+  document.getElementById('lightpaint').style.transform = 'scale(1.8) translate(60px, 20px)';
+  document.getElementById('lightpaint').style.display = "none";
+  document.getElementById('lightpaintvid').style.display = "block"
+  document.getElementById('PSbackarrow').style.display = "block"
+    document.getElementById('clickvid').style.display = "block"
+  document.getElementById('woman').style.display = "none";
+  document.getElementById('street').style.display = "none";
+    document.getElementById('car').style.display = "none";
+    document.getElementById('eye').style.display = "none";
+      document.getElementById('vampire').style.display = "none";
+
+};
+
+edit6zoomout = () => {
+  document.getElementById('lightpaint').style.transform = 'none';
+  document.getElementById('lightpaint').style.display = "";
+  document.getElementById('lightpaintvid').style.display = "none"
+  document.getElementById('PSbackarrow').style.display = "none"
+  document.getElementById('clickvid').style.display = "none"
+  document.getElementById('woman').style.display = "";
+  document.getElementById('street').style.display = "";
+  document.getElementById('car').style.display = "";
+  document.getElementById('eye').style.display = "";
+  document.getElementById('vampire').style.display = "";
+
+};
+
+document.getElementById('lightpaint').addEventListener('click', edit6zoom);
+document.getElementById('PSbackarrow').addEventListener('click', edit6zoomout);
+/*photoshop edit script end*/
+
+/*wildife script start*/
+desktopwl = () => {
+if(window.innerWidth < 800) {
+wlimg1zoom = () => {
+  document.getElementById('Wlimg1').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg1div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('wildlife').style.height = '500px';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+
+
+wlimg1zoomout = () => {
+  document.getElementById('Wlimg1').style.transform = "";
+  document.getElementById('wlimg1div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display = "none";
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg1').addEventListener('click', wlimg1zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg1zoomout);
+
+wlimg2zoom = () => {
+  document.getElementById('Wlimg2').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg2div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+wlimg2zoomout = () => {
+  document.getElementById('Wlimg2').style.transform = "";
+  document.getElementById('wlimg2div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display = "none";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg2').addEventListener('click', wlimg2zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg2zoomout);
+
+wlimg3zoom = () => {
+  document.getElementById('Wlimg3').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg3div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+wlimg3zoomout = () => {
+  document.getElementById('Wlimg3').style.transform = "";
+  document.getElementById('wlimg3div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display = "none";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg3').addEventListener('click', wlimg3zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg3zoomout);
+
+wlimg4zoom = () => {
+  document.getElementById('Wlimg4').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg4div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+wlimg4zoomout = () => {
+  document.getElementById('Wlimg4').style.transform = "";
+  document.getElementById('wlimg4div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display ="none";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg4').addEventListener('click', wlimg4zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg4zoomout);
+
+wlimg5zoom = () => {
+  document.getElementById('Wlimg5').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg5div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+wlimg5zoomout = () => {
+  document.getElementById('Wlimg5').style.transform = "";
+  document.getElementById('wlimg5div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display = "none";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg5').addEventListener('click', wlimg5zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg5zoomout);
+
+wlimg6zoom = () => {
+  document.getElementById('Wlimg6').style.transform = "scale(2) translate(50%, 20%)";
+  document.getElementById('wlimg6div').style.display = 'block';
+  document.getElementById('wildlifebackarrow').style.display = "block"
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+  document.getElementById('sloth').style.display = 'none';
+};
+
+wlimg6zoomout = () => {
+  document.getElementById('Wlimg6').style.transform = "";
+  document.getElementById('wlimg6div').style.display = 'none';
+  document.getElementById('wildlifebackarrow').style.display = "none";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+  document.getElementById('sloth').style.display = '';
+};
+document.getElementById('Wlimg6').addEventListener('click', wlimg6zoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', wlimg6zoomout);
+
+/*doesnt work*/
+slothzoom = () => {
+  document.getElementById('sloth').style.transform = "translate(50px)";
+  document.getElementById('Wlimg1').style.display = 'none';
+  document.getElementById('Wlimg2').style.display = 'none';
+  document.getElementById('Wlimg3').style.display = 'none';
+  document.getElementById('Wlimg4').style.display = 'none';
+  document.getElementById('Wlimg6').style.display = 'none';
+  document.getElementById('Wlimg5').style.display = 'none';
+};
+
+slothzoomout = () => {
+  document.getElementById('sloth').style.transform = "";
+  document.getElementById('Wlimg1').style.display = '';
+  document.getElementById('Wlimg2').style.display = '';
+  document.getElementById('Wlimg3').style.display = '';
+  document.getElementById('Wlimg4').style.display = '';
+  document.getElementById('Wlimg6').style.display = '';
+  document.getElementById('Wlimg5').style.display = '';
+};
+document.getElementById('sloth').addEventListener('click', slothzoom);
+document.getElementById('wildlifebackarrow').addEventListener('click', slothzoomout);
+
+}
+}
+window.addEventListener('load', desktopwl);
+/*wildlife script end*/
+  </script>
+  </body>
+</html>
