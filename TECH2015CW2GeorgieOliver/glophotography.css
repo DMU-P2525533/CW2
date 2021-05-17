@@ -7,7 +7,7 @@ html{
 body{
 margin: 0;
 background-color: #cccccc;
-width: 100%; /*ensures that the content of the site will take up the full width of the users screen*/
+width: 100%;
 height: auto;
 
 
@@ -23,9 +23,9 @@ section{
   opacity: 0;
   position: fixed;
   top: 0;
-  z-index: 7; /* the z-index acts a stack order of the elements. the container was set to 7 so that it wouldn't cover the menu which would stop users from being able to click on the button*/
+  z-index: 7;
   left:-100%;
-  transition: left 0.4s; /* makes the menu slide in and out of view*/
+  transition: left 0.4s;
 
 
 }
@@ -36,7 +36,7 @@ button{
   border: none;
   border-right:inset ;
 
-  font-family: arial;
+  font-family: avenir;
   text-align: center;
   padding: 3%;
 
@@ -70,7 +70,7 @@ padding-bottom: 5%;
   margin:0;
   text-align: center;
   font-size: 48px;
-  font-family: Helvetica;
+  font-family: 'courier new',monospace;
 display: block;
   color: #4f6066;
 background-color: #cccccc;
@@ -94,8 +94,7 @@ background-color: #cccccc;
 #biotext{
 padding: 3%;
 font-size: 20px;
-font-family: Helvetica;
-font-weight: lighter;
+font-family: avenir;
 text-align: center;
 }
 
@@ -107,7 +106,6 @@ width:100%;
 z-index: 10;
 left:-100%; /*sets the menu off of screen*/
 transition: left 0.4s; /*creates the slide out effect*/
-font-family: Helvetica;
 
 }
 #container{
@@ -128,7 +126,7 @@ font-family: Helvetica;
 
 
 #hamburgermenu{
-  position: sticky; /* makes the menu icon availible regardless of where the user is on the page*/
+  position: sticky;
   top: 0;
   padding: 4%;
   height: 5%;
@@ -159,7 +157,7 @@ font-family: Helvetica;
   border-style: dotted;
   border-color: white;
   text-align: center;
-  font-family: Helvetica;
+  font-family: Courier New;
   margin: 0;
 
 }
@@ -301,7 +299,7 @@ button{
    width:100%;
    font-size: 40px;
    text-align: center;
-   font-family: Helvetica;
+   font-family: avenir;
    font-weight: lighter;
    margin: 0;
    padding-top: 5%;
@@ -358,7 +356,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
 
 
  }
@@ -380,7 +377,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
 
 
  }
@@ -402,7 +398,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg4div{
@@ -422,7 +417,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg5div{
@@ -442,7 +436,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg6div{
@@ -462,7 +455,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg7div{
@@ -482,7 +474,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg8div{
@@ -502,7 +493,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
  }
 
  #flowerimg9div{
@@ -523,7 +513,6 @@ button{
    width: 89%;
    margin:0;
    padding-right: 1%;
-   font-family: Helvetica;
 
  }
 #empty{
@@ -619,7 +608,7 @@ margin: auto 0;
   width:100%;
   font-size: 40px;
   text-align: center;
-  font-family: Helvetica;
+  font-family: avenir;
   font-weight: lighter;
   margin: 0;
   padding-top: 5%;
@@ -660,7 +649,7 @@ animation: PSgrid 5s infinite;
 }
 .photoshoprow1{
   display: flex;
- justify-content:space-between; /*the display and justify content attributes allow space to be created between the rows. this is to help the grid appear more balanced*/
+ justify-content:space-between;
   padding-bottom: 10%;
   margin: 1%;
 
@@ -789,7 +778,7 @@ animation: PSgrid 5s infinite;
     width:100%;
     font-size: 40px;
     text-align: center;
-  font-family: Helvetica;
+    font-family: avenir;
     font-weight: lighter;
     margin: 0;
     padding-top: 5%;
@@ -814,7 +803,7 @@ animation: PSgrid 5s infinite;
   }
 
   .wildlifegrid img{
-    width: 32.5%; /* this width allows the images to appear in a 3x3 grid*/
+    width: 32.5%;
     height: auto;
     transition: opacity 0.15s;
     transition: 1s ease;
@@ -835,7 +824,7 @@ animation: PSgrid 5s infinite;
     50% {background-color: #76d572;}
     100% {background-color: #75bc72;}
 
-  } /* these keyframes will change the colour of the grid over a 5 second intval. this makes the page slighlty more dynamic and encorages users to interact with it.*/
+  }
   #sloth{
     height: 35%;
     width: 100%;
@@ -862,32 +851,26 @@ animation: PSgrid 5s infinite;
   #wl1info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
   }
   #wl2info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
   }
   #wl3info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
   }
   #wl4info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
   }
   #wl5info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
   }
   #wl6info{
     padding-top: 50%;
     text-align: center;
-    font-family: Helvetica;
 }
 @media screen and (min-width: 800px){
 
@@ -896,7 +879,7 @@ animation: PSgrid 5s infinite;
   }
   .wildlifegrid img{
     width:auto;
-    height: 400px; /* image size increased as users have more space on desktop*/
+    height: 400px;
 
   }
   .wildlifegrid{
@@ -924,5 +907,4 @@ animation: PSgrid 5s infinite;
   }
 
 }
-/* as the zoom in funciton is turned off after 800px wide screens, the information that would be in the <p> element that would be displayed not longer can. To still get the information across to desktop users, the image will change on hover to a version of the image that has the same information the <p> element has.*/
   /*wildlife css end*/
