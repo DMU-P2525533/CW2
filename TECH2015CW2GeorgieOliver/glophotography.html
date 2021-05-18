@@ -220,7 +220,7 @@ Your browser does not support the video.
 
   /*bio script end*/
 desktop = () => {
-  if(window.innerWidth < 800) { /*this if statement acts similar to a media query as it will only carry out the zoom functions if the screen is less than 1000px wide. The 'window.innerWidth' identifies the how wide the screen is. the zoom functions wont take place on larger screens as the images will already be displayed in a large size.*/
+  if(window.innerWidth < 800) { /*this if statement acts similar to a media query as it will only carry out the zoom functions if the screen is less than 800px wide. The 'window.innerWidth' identifies the how wide the screen is. the zoom functions wont take place on larger screens as the images will already be displayed in a large size.*/
 
 
 
@@ -517,7 +517,7 @@ desktop = () => {
         }
        
     window.addEventListener('resize', desktop);
-    /* This is the end of the if statement. A window event listener with the load attribute is added as it will identify the screens width as the page loads. This means that the correct functions will be ready to play once the page has loaded. This has been added again with the resize function incase the user resizes their browser whilst using the site (may require reload)*/
+    /* This is the end of the if statement. A window event listener with the resize function has been added incase the user resizes their browser whilst using the site (may require reload)*/
     /*flower script end*/
 
 /*photoshop edit script start*/
